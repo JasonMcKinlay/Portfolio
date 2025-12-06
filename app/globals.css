@@ -1,8 +1,19 @@
 @import "tailwindcss";
 
+/* CSS variables used by the aurora background component (fallbacks)
+   These are provided so the aurora effect shows even before Tailwind
+   generates css-variables from the Tailwind theme. */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --white: rgba(255,255,255,1);
+  --black: rgba(0,0,0,1);
+  --transparent: transparent;
+  --blue-500: #3b82f6;
+  --indigo-300: #a78bfa;
+  --blue-300: #60a5fa;
+  --violet-200: #c7b3ff;
+  --blue-400: #7db8ff;
 }
 
 @theme inline {
@@ -17,6 +28,18 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+/* Provide a plain CSS fallback for the `animate-aurora` utility so the
+   aurora background animates even if Tailwind hasn't been built yet. */
+@keyframes aurora {
+  0% { background-position: 0% 25%; }
+  50% { background-position: 50% 25%; }
+  100% { background-position: 0% 25%; }
+}
+
+.animate-aurora {
+  animation: aurora 20s ease-in-out infinite;
 }
 
 body {

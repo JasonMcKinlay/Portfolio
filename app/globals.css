@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant hover (&:hover);
+
 /* CSS variables used by the aurora background component (fallbacks)
    These are provided so the aurora effect shows even before Tailwind
    generates css-variables from the Tailwind theme. */

@@ -32,7 +32,7 @@ export default function Home() {
               Hi, I'm Jason McKinlay.
             </div>
             <p className="font-extralight text-2xl dark:text-neutral-200 py-2 text-center md:text-left">
-              I'm a software engineer and third-year computer science student at Penn State passionate about the art of building.
+              I'm a software engineer and third-year computer science student at Penn State passionate about the art of building full-stack applications.
             </p>
           </div>
         </div>

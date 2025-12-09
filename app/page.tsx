@@ -40,10 +40,14 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-row">
-          <Button text="Learn More" />
+          <Button text="Learn More"/>
           <Button text="Contact Me" />
         </div>
       </motion.div>
+      </div>
+
+      <div className="w-full flex justify-center">
+        <div className="w-full max-w-6xl border-t border-white/20"></div>
       </div>
 
       <motion.div
@@ -54,7 +58,7 @@ export default function Home() {
           duration: 0.8,
           ease: "easeOut",
         }}
-        className="relative flex flex-col justify-center items-center px-4"
+        className="relative flex flex-col justify-center items-center px-4 pt-12 pb-8"
         id="about-me-section"
       >
         <div className="relative flex flex-col md:flex-row items-center max-w-6xl w-full gap-8 z-10">
@@ -106,6 +110,10 @@ export default function Home() {
         </div>
       </motion.div>
 
+      <div className="w-full flex justify-center">
+        <div className="w-full max-w-6xl border-t border-white/20"></div>
+      </div>
+
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -114,32 +122,72 @@ export default function Home() {
           duration: 0.8,
           ease: "easeOut",
         }}
-        className="relative min-h-screen flex flex-col justify-center items-center px-4"
+        className="relative flex flex-col justify-center items-center px-4 pt-12 pb-8"
         id="skills-section"
       >
       <div className="relative flex flex-col items-center justify-center px-4 z-10" id="skills-section">
         <h2 className="text-4xl font-bold dark:text-white mb-8">Skills</h2>
         <div className="grid grid-cols-6 md:grid-cols-5 sm:grid-cols-4 gap-8 max-w-4xl w-full text-center">
-            <SmallCard text="JavaScript" />
-            <SmallCard text="TypeScript" />
-            <SmallCard text="HTML" />
-            <SmallCard text="CSS" />
-            <SmallCard text="React" />
-            <SmallCard text="Node.js" />
-            <SmallCard text="Next.js" />
-            <SmallCard text="Tailwind" />
-            <SmallCard text="Bootstrap" />
-            <SmallCard text="Python" />
-            <SmallCard text="Java" />
-            <SmallCard text="C" />
-            <SmallCard text="Spring Boot" />
-            <SmallCard text="PostgreSQL" />
-            <SmallCard text="REST APIs" />
-            <SmallCard text="Git" />
-            <SmallCard text="Docker" />
-            <SmallCard text="AWS" />
-            <SmallCard text="CLIs" />
-            <SmallCard text="Agile" />
+            <div className={`bg-white/5 hover:bg-amber-200/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-amber-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-amber-200/30`}>
+              <img src="/icons/javascript.png" alt="javascript-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <h3 className="text-md text-white font-extralight">JavaScript</h3>
+            </div>
+            <div className={`bg-white/5 hover:bg-blue-400/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-blue-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-blue-300/30`}>
+              <img src="/icons/typescript.png" alt="typescript-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <h3 className="text-md text-white font-extralight">TypeScript</h3>
+            </div>
+            <div className={`bg-white/5 hover:bg-red-400/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-red-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-red-400/30`}>
+              <img src="/icons/html.png" alt="html-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <h3 className="text-md text-white font-extralight">HTML</h3>
+            </div>
+            <div className={`bg-white/5 hover:bg-blue-500/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-blue-400/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-blue-600/30`}>
+              <img src="/icons/css.png" alt="css-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <h3 className="text-md text-white font-extralight">CSS</h3>
+            </div>
+            <div className={`bg-white/5 hover:bg-cyan-300/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-cyan-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-cyan-600/30`}>
+              <img src="/icons/react.png" alt="react-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <h3 className="text-md text-white font-extralight">React</h3>
+            </div>
+            <div className={`bg-white/5 hover:bg-amber-200/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-amber-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-amber-200/30`}>
+              <img src="/icons/python.png" alt="python-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <h3 className="text-md text-white font-extralight">Python</h3>
+            </div>
+            <div className={`bg-white/5 hover:bg-blue-400/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-blue-400/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-blue-500/30`}>
+              <img src="/icons/java.png" alt="java-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <h3 className="text-md text-white font-extralight">Java</h3>
+            </div>
+            <div className={`bg-white/5 hover:bg-blue-400/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-blue-400/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-blue-400/30`}>
+              <img src="/icons/c.png" alt="c-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <h3 className="text-md text-white font-extralight">C</h3>
+            </div>
+            <div className={`bg-white/5 hover:bg-lime-300/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-lime-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-lime-200/30`}>
+              <img src="/icons/spring boot.png" alt="spring-boot-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <h3 className="text-md text-white font-extralight">Spring Boot</h3>
+            </div>
+            <div className={`bg-white/5 hover:bg-sky-200/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-sky-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-sky-200/30`}>
+              <img src="/icons/postgresql.png" alt="postgresql-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <h3 className="text-md text-white font-extralight">PostgreSQL</h3>
+            </div>
+            <div className={`bg-white/5 hover:bg-teal-200/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-teal-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-teal-200/30`}>
+              <img src="/icons/tailwind.png" alt="tailwind-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <h3 className="text-md text-white font-extralight">Tailwind</h3>
+            </div>
+            <div className={`bg-white/5 hover:bg-blue-400/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-blue-400/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-blue-600/30`}>
+              <img src="/icons/docker.png" alt="docker-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <h3 className="text-md text-white font-extralight">Docker</h3>
+            </div>
+            <div className={`bg-white/5 hover:bg-red-400/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-red-400/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-red-400/30`}>
+              <img src="/icons/git.png" alt="git-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <h3 className="text-md text-white font-extralight">Git</h3>
+            </div>
+            <div className={`bg-white/5 hover:bg-orange-300/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-orange-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-orange-300/30`}>
+              <img src="/icons/aws.png" alt="aws-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <h3 className="text-md text-white font-extralight">AWS</h3>
+            </div>
+            <div className={`bg-white/5 hover:bg-lime-300/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-lime-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-lime-300/30`}>
+              <img src="/icons/node.png" alt="nodejs-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <h3 className="text-md text-white font-extralight">Node.js</h3>
+            </div>
         </div>
       </div>
       </motion.div>

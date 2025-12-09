@@ -13,7 +13,7 @@ export default function Signature() {
         className="w-32 h-auto"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.8 }}
       >
         <motion.path
           d={signaturePath}
@@ -24,7 +24,7 @@ export default function Signature() {
           fillRule="evenodd"
           
           initial={{ pathLength: 0, fillOpacity: 0 }}
-          animate={{ pathLength: 1, fillOpacity: 1 }}
+          whileInView={{ pathLength: 1, fillOpacity: 1 }}
           transition={{
             pathLength: { duration: 3, ease: "easeOut" },
             fillOpacity: { delay: 2, duration: 1, ease: "easeOut" },

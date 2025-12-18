@@ -6,6 +6,7 @@ import { AuroraBackground } from "@/components/ui/aurora-background";
 import Button from "@/components/ui/button";
 import SmallCard from "@/components/ui/small-card";
 import SignatureLogo from "@/components/ui/signature-logo";
+import Carousel from "@/components/ui/carousel";
 
 
 export default function Home() {
@@ -72,10 +73,6 @@ export default function Home() {
       </motion.div>
       </div>
 
-      <div className="w-full flex justify-center">
-        <div className="w-full max-w-6xl border-t border-white/20"></div>
-      </div>
-
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -84,9 +81,13 @@ export default function Home() {
           duration: 0.8,
           ease: "easeOut",
         }}
-        className="relative flex flex-col justify-center items-center px-4 pt-12 pb-8"
+        className="relative flex flex-col justify-center items-center px-4 pb-2"
         id="about-me-section"
       >
+
+        <div className="w-full flex justify-center">
+          <div className="w-full max-w-6xl border-t border-white/20 pt-16"></div>
+        </div>
         <div className="relative flex flex-col md:flex-row items-center max-w-6xl w-full gap-8 z-10">
           <div className="md:w-3/5 w-full">
             <h2 className="text-4xl font-bold dark:text-white mb-4">About Me</h2>
@@ -136,10 +137,6 @@ export default function Home() {
         </div>
       </motion.div>
 
-      <div className="w-full flex justify-center">
-        <div className="w-full max-w-6xl border-t border-white/20"></div>
-      </div>
-
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -148,9 +145,13 @@ export default function Home() {
           duration: 0.8,
           ease: "easeOut",
         }}
-        className="relative flex flex-col justify-center items-center px-4 pt-12 pb-8"
+        className="relative flex flex-col justify-center items-center px-4 pb-8 pt-12"
         id="skills-section"
       >
+
+        <div className="w-full flex justify-center">
+          <div className="w-full max-w-6xl border-t border-white/20 pt-12"></div>
+        </div>
       <div className="relative flex flex-col items-center justify-center w-6xl max-w-full px-4 z-10" id="skills-section">
         <h2 className="text-4xl font-bold dark:text-white mb-8">Skills</h2>
         <div className="grid grid-cols-6 md:grid-cols-6 sm:grid-cols-4 gap-8 max-w-5xl w-full text-center">
@@ -230,10 +231,6 @@ export default function Home() {
       </div>
       </motion.div>
 
-      <div className="w-full flex justify-center">
-        <div className="w-full max-w-6xl border-t border-white/20"></div>
-      </div>
-
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -245,6 +242,10 @@ export default function Home() {
         className="relative flex flex-col justify-center items-center px-4 pt-12 pb-12"
         id="projects-section"
       >
+        <div className="w-full flex justify-center">
+          <div className="w-full max-w-6xl border-t border-white/20 pt-12"></div>
+        </div>
+
         <div className="relative flex flex-col items-center justify-center w-full max-w-6xl px-4 z-10">
           <h2 className="text-4xl font-bold dark:text-white mb-8">Here's what I've been doing.</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
@@ -296,6 +297,8 @@ export default function Home() {
             ))}
           </div>
         </div>
+
+        {/* <Carousel projects={projects} /> */}
       </motion.div>
 
       <div className="w-full flex justify-center">

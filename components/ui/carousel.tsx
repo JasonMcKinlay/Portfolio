@@ -42,7 +42,7 @@ export default function Carousel({ projects }: { projects: Project[] }) {
               <motion.div
                 key={p.title}
                 className="group block bg-white/5 hover:bg-white/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-white/30 transition duration-300 shadow-lg shadow-black/20 hover:shadow-slate-600/50 w-full"
-                // initial={{ x: 50, opacity: 0 }}
+                initial={{ x: 50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: -100, opacity: 0 }}
                 transition={{ duration: 0.45 }}

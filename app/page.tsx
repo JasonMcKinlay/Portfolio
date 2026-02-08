@@ -163,71 +163,71 @@ export default function Home() {
         <h2 className="text-4xl font-bold text-white mb-8">Skills</h2>
         <div className="grid grid-cols-6 md:grid-cols-6 sm:grid-cols-4 gap-8 max-w-5xl w-full text-center">
             <div className={`bg-white/5 hover:bg-amber-200/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-amber-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-amber-200/30`}>
-              <img src="/icons/javascript.png" alt="javascript-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <img src="/icons/JavaScript.png" alt="javascript-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
               <h3 className="text-md text-white font-extralight">JavaScript</h3>
             </div>
             <div className={`bg-white/5 hover:bg-blue-400/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-blue-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-blue-300/30`}>
-              <img src="/icons/typescript.png" alt="typescript-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <img src="/icons/TypeScript.png" alt="typescript-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
               <h3 className="text-md text-white font-extralight">TypeScript</h3>
             </div>
             <div className={`bg-white/5 hover:bg-red-400/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-red-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-red-400/30`}>
-              <img src="/icons/html.png" alt="html-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <img src="/icons/HTML.png" alt="html-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
               <h3 className="text-md text-white font-extralight">HTML</h3>
             </div>
             <div className={`bg-white/5 hover:bg-blue-500/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-blue-400/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-blue-600/30`}>
-              <img src="/icons/css.png" alt="css-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <img src="/icons/CSS.png" alt="css-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
               <h3 className="text-md text-white font-extralight">CSS</h3>
             </div>
             <div className={`bg-white/5 hover:bg-cyan-300/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-cyan-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-cyan-600/30`}>
-              <img src="/icons/react.png" alt="react-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <img src="/icons/React.png" alt="react-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
               <h3 className="text-md text-white font-extralight">React</h3>
             </div>
             <div className={`bg-white/5 hover:bg-teal-200/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-teal-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-teal-200/30`}>
-              <img src="/icons/tailwind.png" alt="tailwind-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <img src="/icons/Tailwind.png" alt="tailwind-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
               <h3 className="text-md text-white font-extralight">Tailwind</h3>
             </div>
             <div className={`bg-white/5 hover:bg-amber-200/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-amber-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-amber-200/30`}>
-              <img src="/icons/python.png" alt="python-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <img src="/icons/Python.png" alt="python-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
               <h3 className="text-md text-white font-extralight">Python</h3>
             </div>
             <div className={`bg-white/5 hover:bg-blue-400/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-blue-400/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-blue-500/30`}>
-              <img src="/icons/java.png" alt="java-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <img src="/icons/Java.png" alt="java-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
               <h3 className="text-md text-white font-extralight">Java</h3>
             </div>
             <div className={`bg-white/5 hover:bg-blue-400/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-blue-400/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-blue-400/30`}>
-              <img src="/icons/c.png" alt="c-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <img src="/icons/C.png" alt="c-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
               <h3 className="text-md text-white font-extralight">C</h3>
             </div>
             <div className={`bg-white/5 hover:bg-lime-300/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-lime-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-lime-200/30`}>
-              <img src="/icons/spring boot.png" alt="spring-boot-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <img src="/icons/Spring Boot.png" alt="spring-boot-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
               <h3 className="text-md text-white font-extralight">Spring Boot</h3>
             </div>
             <div className={`bg-white/5 hover:bg-sky-200/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-sky-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-sky-200/30`}>
-              <img src="/icons/postgresql.png" alt="postgresql-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <img src="/icons/PostgreSQL.png" alt="postgresql-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
               <h3 className="text-md text-white font-extralight">PostgreSQL</h3>
             </div>
             <div className={`bg-white/5 hover:bg-lime-300/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-lime-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-lime-300/30`}>
-              <img src="/icons/node.png" alt="nodejs-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <img src="/icons/Node.png" alt="nodejs-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
               <h3 className="text-md text-white font-extralight">Node.js</h3>
             </div>
             <div className={`bg-white/5 hover:bg-blue-400/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-blue-400/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-blue-600/30`}>
-              <img src="/icons/docker.png" alt="docker-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <img src="/icons/Docker.png" alt="docker-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
               <h3 className="text-md text-white font-extralight">Docker</h3>
             </div>
             <div className={`bg-white/5 hover:bg-red-400/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-red-400/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-red-400/30`}>
-              <img src="/icons/git.png" alt="git-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <img src="/icons/Git.png" alt="git-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
               <h3 className="text-md text-white font-extralight">Git</h3>
             </div>
             <div className={`bg-white/5 hover:bg-purple-400/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-purple-400/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-purple-400/30`}>
-              <img src="/icons/github.png" alt="github-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <img src="/icons/GitHub.png" alt="github-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
               <h3 className="text-md text-white font-extralight">GitHub</h3>
             </div>
             <div className={`bg-white/5 hover:bg-orange-300/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-orange-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-orange-300/30`}>
-              <img src="/icons/aws.png" alt="aws-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <img src="/icons/AWS.png" alt="aws-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
               <h3 className="text-md text-white font-extralight">AWS</h3>
             </div>
             <div className={`bg-white/5 hover:bg-white/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-white/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-white/20`}>
-              <img src="/icons/next.png" alt="nextjs-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
+              <img src="/icons/Next.png" alt="nextjs-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
               <h3 className="text-md text-white font-extralight">Next.js</h3>
             </div>
             <div className={`bg-white/5 hover:bg-blue-300/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-blue-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-blue-400/30`}>

@@ -60,17 +60,17 @@ export default function Home() {
           />
 
           <div className="w-full">
-            <div className="font-black text-3xl md:text-6xl dark:text-neutral-100 text-center md:text-left">
+            <div className="font-black text-3xl md:text-6xl text-neutral-100 text-center md:text-left">
               Hi, I'm Jason McKinlay.
             </div>
-            <p className="font-extralight text-2xl dark:text-neutral-200 py-2 text-center md:text-left">
+            <p className="font-extralight text-2xl text-neutral-200 py-2 text-center md:text-left">
               I'm a software engineer and computer science student passionate about the art of building full-stack applications that make a difference.
             </p>
           </div>
         </div>
-        <div className="flex flex-row">
-          <Button text="Learn More"/>
-          <Button text="Contact Me" />
+        <div className="flex flex-row gap-4">
+          <a className="bg-white/10 backdrop-blur-md border-white/20 rounded-full w-fit ring-2 ring-white/20 hover:ring-white text-white hover:text-black px-4 py-2 hover:scale-105 hover:bg-gray-200 transition mt-4 px-6 mx-2 shadow-black/20 shadow-lg hover:shadow-slate-600 duration-275" href="#about-me-section">Learn More</a>
+          <a className="bg-white/10 backdrop-blur-md border-white/20 rounded-full w-fit ring-2 ring-white/20 hover:ring-white text-white hover:text-black px-4 py-2 hover:scale-105 hover:bg-gray-200 transition mt-4 px-6 mx-2 shadow-black/20 shadow-lg hover:shadow-slate-600 duration-275" href="#main-contact">Contact Me</a>
         </div>
       </motion.div>
       </div>
@@ -83,23 +83,24 @@ export default function Home() {
           duration: 0.8,
           ease: "easeOut",
         }}
-        className="relative flex flex-col justify-center items-center px-4 pb-2"
+        className="relative min-h-screen flex flex-col justify-between items-center px-4 pb-2"
         id="about-me-section"
       >
 
         <div className="w-full flex justify-center">
           <div className="w-full max-w-6xl border-t border-white/20 pt-16"></div>
         </div>
+
         <div className="relative flex flex-col md:flex-row items-center max-w-6xl w-full gap-8 z-10">
           <div className="md:w-3/5 w-full">
-            <h2 className="text-4xl font-bold dark:text-white mb-4">About Me</h2>
-            <p className="text-lg dark:text-neutral-200 mb-6 font-extralight">
+            <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+            <p className="text-lg text-neutral-200 mb-6 font-extralight">
               Since I was young, I’ve always been creating, whether it’s music, film, or graphics. I don't just write code; I build products. That background gives me an eye for design that many engineers miss.
             </p>
-            <p className="text-lg dark:text-neutral-200 mb-6 font-extralight">
+            <p className="text-lg text-neutral-200 mb-6 font-extralight">
               I'm a third-year CS major at Penn State, but the learning doesn't stop there. I live by the philosophy of watching the sun set every day knowing I've learned one new thing. That drive alone fostered experience with powerful tools like React, Spring Boot, or AWS. 
             </p>
-            <p className="text-lg dark:text-neutral-200 mb-6 font-extralight">
+            <p className="text-lg text-neutral-200 mb-6 font-extralight">
               Outside of tech, I constantly chase self-improvement, with hobbies like cooking or weightlifting. It's every one of these aspects that shapes the kind of developer I am, and it keeps me excited for what's in store next. Let's get to work together.
             </p>
           </div>
@@ -116,9 +117,9 @@ export default function Home() {
               <div className="flex items-center gap-4">
                 <img src="/psu-logo.png" alt="psu-logo" className="w-16 h-auto md:w-24 md:h-auto object-contain mix-blend-color-dodge mr-2" />
                 <div className="flex flex-col">
-                  <h3 className="text-lg font-bold dark:text-white">The Pennsylvania State University</h3>
-                  <p className="mt-1 text-sm dark:text-white font-extralight">B.S. in Computer Science</p>
-                  <p className="mt-1 text-sm dark:text-white font-extralight">August 2023 - May 2027</p>
+                  <h3 className="text-lg font-bold text-white">The Pennsylvania State University</h3>
+                  <p className="mt-1 text-sm text-white font-extralight">B.S. in Computer Science</p>
+                  <p className="mt-1 text-sm text-white font-extralight">August 2023 - May 2027</p>
                 </div>
               </div>
             </div>
@@ -126,13 +127,17 @@ export default function Home() {
               <div className="flex items-center gap-4">
                 <img src="/aws-logo-dark.png" alt="aws-logo" className="w-16 h-auto md:w-24 md:h-auto object-contain mr-2" />
                 <div className="flex flex-col">
-                  <h3 className="text-lg font-bold dark:text-white">AWS Certified Cloud Practitioner</h3>
-                  <p className="mt-1 text-sm dark:text-white font-extralight">Amazon</p>
-                  <p className="mt-1 text-sm dark:text-white font-extralight">August 2025</p>
+                  <h3 className="text-lg font-bold text-white">AWS Certified Cloud Practitioner</h3>
+                  <p className="mt-1 text-sm text-white font-extralight">Amazon</p>
+                  <p className="mt-1 text-sm text-white font-extralight">August 2025</p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="w-full flex justify-center">
+          <div className="w-full max-w-6xl border-t border-white/0 pt-16"></div>
         </div>
         {/* <div className="w-full flex justify-end">
           <SignatureLogo />
@@ -155,7 +160,7 @@ export default function Home() {
           <div className="w-full max-w-6xl border-t border-white/20 pt-12"></div>
         </div>
       <div className="relative flex flex-col items-center justify-center w-6xl max-w-full px-4 z-10" id="skills-section">
-        <h2 className="text-4xl font-bold dark:text-white mb-8">Skills</h2>
+        <h2 className="text-4xl font-bold text-white mb-8">Skills</h2>
         <div className="grid grid-cols-6 md:grid-cols-6 sm:grid-cols-4 gap-8 max-w-5xl w-full text-center">
             <div className={`bg-white/5 hover:bg-amber-200/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-amber-300/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-amber-200/30`}>
               <img src="/icons/javascript.png" alt="javascript-icon" className="w-10 h-10 mx-auto mb-2 object-contain" />
@@ -249,15 +254,15 @@ export default function Home() {
         </div>
 
         <div className="relative flex flex-col items-center justify-center w-full max-w-6xl px-4 z-10">
-          <h2 className="text-4xl font-bold dark:text-white mb-8">Here's what I've been doing.</h2>
+          <h2 className="text-4xl font-bold text-white mb-8">Here's what I've been doing.</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
             {projects.map((p) => (
               <div key={p.title} className="group block bg-white/5 hover:bg-white/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-white/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-slate-600/50 w-full">
                 <div className="h-40 w-full bg-slate-800/40 rounded-md overflow-hidden mb-4 flex items-center justify-center">
                   <img src={p.image} alt={p.title} className="object-contain w-full" />
                 </div>
-                <h3 className="text-xl font-semibold dark:text-white mb-1">{p.title}</h3>
-                <p className="text-sm dark:text-neutral-200 mb-3 font-extralight">{p.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-1">{p.title}</h3>
+                <p className="text-sm text-neutral-200 mb-3 font-extralight">{p.description}</p>
                 <div className="flex flex-wrap gap-2 mt-2">
                   {p.tags.map((t) => (
                     <span key={t} className="text-xs bg-white/7 text-white/90 px-3 py-1 rounded-full">{t}</span>
@@ -267,7 +272,7 @@ export default function Home() {
 
                 {p.link && (
                 <a href={p.link}>
-                  <button className="flex flex-row items-center gap-2 bg-black dark:bg-white/10 dark:backdrop-blur-md dark:border-white/20 rounded-full w-fit ring-2 dark:ring-white/20 hover:ring-white text-white hover:text-black px-4 py-2 hover:scale-105 hover:bg-gray-800 dark:hover:bg-gray-200 transition mt-4 shadow-black/20 shadow-lg hover:shadow-slate-600 duration-275">
+                  <button className="flex flex-row items-center gap-2 bg-white/10 backdrop-blur-md border-white/20 rounded-full w-fit ring-2 ring-white/20 hover:ring-white text-white hover:text-black px-4 py-2 hover:scale-105 hover:bg-gray-200 transition mt-4 shadow-black/20 shadow-lg hover:shadow-slate-600 duration-275">
                     <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" 
                       width="13px" height="13px" viewBox="0 0 442.246 442.246">
                     <g>
@@ -291,7 +296,7 @@ export default function Home() {
 
                 {p.github && (
                 <a href={p.github}>
-                  <button className="flex flex-row items-center gap-2 bg-black dark:bg-white/90 dark:backdrop-blur-md rounded-full w-fit text-black px-4 py-2 hover:scale-105 hover:bg-gray-800 dark:hover:bg-neutral-300 transition mt-4 mx-4 shadow-black/20 shadow-lg duration-275">
+                  <button className="flex flex-row items-center gap-2 bg-white/90 backdrop-blur-md rounded-full w-fit text-black px-4 py-2 hover:scale-105 hover:bg-neutral-300 transition mt-4 mx-4 shadow-black/20 shadow-lg duration-275">
                     <svg width="16" height="16" viewBox="0 0 1024 1024" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)"/>
                     </svg>
@@ -300,8 +305,8 @@ export default function Home() {
                 </a>)}
 
                 {p.incomplete && (
-                  <div className="flex flex-row items-center gap-2 bg-black dark:bg-white/90 dark:backdrop-blur-md rounded-full w-fit text-black px-4 py-2 hover:bg-gray-800 dark:hover:bg-neutral-300 transition mt-4 px-6 shadow-black/20 shadow-lg duration-275">
-                    Coming soon!
+                  <div className="flex flex-row items-center gap-2 bg-blue-400/30 ring-2 ring-blue-400/40 backdrop-blur-md rounded-full w-fit text-black py-2 hover:bg-blue-400/50 hover:ring-blue-400/60 transition mt-4 px-7 shadow-black/20 shadow-lg duration-275">
+                    <p className="text-sm text-white">Coming soon!</p>
                   </div>
                 )}
                 
@@ -331,8 +336,8 @@ export default function Home() {
       >
 
         <div id="main-contact" className="relative flex flex-col items-center justify-center w-full max-w-6xl px-4 z-10 flex-1 pt-12">
-          <h2 className="text-4xl font-bold dark:text-white mb-4">Contact Me</h2>
-          <p className="text-lg dark:text-neutral-100 mb-8 font-extralight w-lg text-center">Whether it's a new opportunity or you just want to connect, feel free to reach out. I'm always looking forward to what's next. Let's get in touch.</p>
+          <h2 className="text-4xl font-bold text-white mb-4">Contact Me</h2>
+          <p className="text-lg text-neutral-100 mb-8 font-extralight w-lg text-center">Whether it's a new opportunity or you just want to connect, feel free to reach out. I'm always looking forward to what's next. Let's get in touch.</p>
           <div className="w-3/4 flex flex-col md:flex-row items-center justify-center gap-8 mb-4">
 
             <a href="mailto:jasonmckinlay.us@gmail.com" target="_blank" className="bg-white/5 hover:bg-white/10 hover:backdrop-blur-md p-6 rounded-xl border border-white/20 hover:border-white/30 hover:scale-105 transition duration-300 shadow-lg shadow-black/20 hover:shadow-slate-600/50 w-full">
@@ -348,7 +353,7 @@ export default function Home() {
                       </g>
                   </g>
                 </svg>
-                <h3 className="font-light dark:text-neutral-200 text-sm">jasonmckinlay.us@gmail.com</h3>
+                <h3 className="font-light text-neutral-200 text-sm">jasonmckinlay.us@gmail.com</h3>
               </div>
             </a>
 
@@ -357,7 +362,7 @@ export default function Home() {
                 <svg width="36x" height="36px" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22 3.47059V20.5294C22 20.9194 21.8451 21.2935 21.5693 21.5693C21.2935 21.8451 20.9194 22 20.5294 22H3.47059C3.08056 22 2.70651 21.8451 2.43073 21.5693C2.15494 21.2935 2 20.9194 2 20.5294V3.47059C2 3.08056 2.15494 2.70651 2.43073 2.43073C2.70651 2.15494 3.08056 2 3.47059 2H20.5294C20.9194 2 21.2935 2.15494 21.5693 2.43073C21.8451 2.70651 22 3.08056 22 3.47059ZM7.88235 9.64706H4.94118V19.0588H7.88235V9.64706ZM8.14706 6.41177C8.14861 6.18929 8.10632 5.96869 8.02261 5.76255C7.93891 5.55642 7.81542 5.36879 7.65919 5.21039C7.50297 5.05198 7.31708 4.92589 7.11213 4.83933C6.90718 4.75277 6.68718 4.70742 6.46471 4.70588H6.41177C5.95934 4.70588 5.52544 4.88561 5.20552 5.20552C4.88561 5.52544 4.70588 5.95934 4.70588 6.41177C4.70588 6.86419 4.88561 7.29809 5.20552 7.61801C5.52544 7.93792 5.95934 8.11765 6.41177 8.11765C6.63426 8.12312 6.85565 8.0847 7.06328 8.00458C7.27092 7.92447 7.46074 7.80422 7.62189 7.65072C7.78304 7.49722 7.91237 7.31346 8.00248 7.10996C8.09259 6.90646 8.14172 6.6872 8.14706 6.46471V6.41177ZM19.0588 13.3412C19.0588 10.5118 17.2588 9.41177 15.4706 9.41177C14.8851 9.38245 14.3021 9.50715 13.7799 9.77345C13.2576 10.0397 12.8143 10.4383 12.4941 10.9294H12.4118V9.64706H9.64706V19.0588H12.5882V14.0529C12.5457 13.5403 12.7072 13.0315 13.0376 12.6372C13.3681 12.2429 13.8407 11.9949 14.3529 11.9471H14.4647C15.4 11.9471 16.0941 12.5353 16.0941 14.0176V19.0588H19.0353L19.0588 13.3412Z"/>
                 </svg>
-                <h3 className="font-light dark:text-neutral-200 text-sm">linkedin.com/in/jason-mckinlay</h3>
+                <h3 className="font-light text-neutral-200 text-sm">linkedin.com/in/jason-mckinlay</h3>
               </div>
             </a>
 
@@ -374,7 +379,7 @@ export default function Home() {
                         </g>
                     </g>
                 </svg>
-                <h3 className="font-light dark:text-neutral-200 text-sm">github.com/JasonMcKinlay</h3>
+                <h3 className="font-light text-neutral-200 text-sm">github.com/JasonMcKinlay</h3>
               </div>
             </a>
 
